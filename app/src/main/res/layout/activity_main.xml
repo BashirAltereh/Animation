@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <android.support.constraint.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/tImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/spongebob"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/bu1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="buFade"
+            android:text="Fade out"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tImage"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/bu2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="buFadeIn"
+            android:text="Fade in"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bu1"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/bu3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="buBlink"
+            android:text="Blink"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bu2"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/bu4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="buZoomIn"
+            android:text="Zoom in"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bu3"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/bu5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="buZoomOut"
+            android:text="Zoom out"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bu4"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/bu6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="buRotate"
+            android:text="Rotate"
+            app:layout_constraintLeft_toRightOf="@id/bu5"
+            app:layout_constraintTop_toBottomOf="@+id/tImage"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/bu7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="buMoveDown"
+            android:text="Move Down"
+            app:layout_constraintLeft_toRightOf="@id/bu4"
+            app:layout_constraintTop_toBottomOf="@+id/bu6"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/bu8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="buMoveRight"
+            android:text="Move Right"
+            app:layout_constraintLeft_toRightOf="@id/bu4"
+            app:layout_constraintTop_toBottomOf="@+id/bu7"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/bu9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="buSlideUp"
+            android:text="Slide Up"
+            app:layout_constraintLeft_toRightOf="@id/bu4"
+            app:layout_constraintTop_toBottomOf="@+id/bu8"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/bu10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="buSlideRight"
+            android:text="Slide Right"
+            app:layout_constraintLeft_toRightOf="@id/bu4"
+            app:layout_constraintTop_toBottomOf="@+id/bu9"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/bu11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="buZoomWithRotate"
+            android:text="Zoom &amp; Rotate"
+            app:layout_constraintLeft_toRightOf="@id/bu4"
+            app:layout_constraintTop_toBottomOf="@+id/bu10"
+            tools:ignore="HardcodedText,OnClick" />
+
+        <Button
+            android:id="@+id/bu12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="buFall"
+            android:text="Fall"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bu5"
+            tools:ignore="HardcodedText,OnClick" />
+
+      </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>
